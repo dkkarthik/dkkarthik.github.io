@@ -275,7 +275,7 @@ scholar:
   last_name: [Dantu]
   first_name: [Karthik, K.]
 
-  style: apa
+  style: chicago-author-date
   locale: en
 
   source: /_bibliography/
