@@ -2,96 +2,151 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Karthik Dantu
+    - name: Position
+      value: Associate Professor, Computer Science and Engineering, University at Buffalo
+    - name: Office
+      value: Davis 113F
+    - name: Email
+      value: kdantu@buffalo.edu
+    - name: Web
+      value: https://dkkarthik.github.io/
+
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Robot perception
+      items:
+        - Task-specific representations for robot autonomy
+        - Efficient perception for real-world operation
+        - Robust perception for safe autonomy in challenging environments
+    - title: Current application areas
+      items:
+        - Infrastructure inspection
+        - Autonomous excavation
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Computer Science
+      institution: University of Southern California
+      year: 2010
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Dissertation: Reconfigurable Sensor Networks
+        - Advisor: Prof. Gaurav S. Sukhatme
+    - title: M.S. in Computer Science
+      institution: University of Southern California
+      year: null
       description:
-        - Description 1.
-        - Description 2.
+        - Dissertation: Power-awareness in embedded systems
+        - Advisor: Prof. Massoud Pedram
+    - title: B.E. in Computer Science and Engineering
+      institution: Sri Jayachamarajendra College of Engineering, Mysore, India
+      year: 1999
+      description:
+        - Dissertation: Implementing SACK and T/TCP in Linux 2.0.36
+        - Advisor: Prof. Kumar Sivarajan
 
-- title: Experience
+- title: Academic Appointments
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Associate Professor
+      institution: Department of Computer Science and Engineering, University at Buffalo
+      year: Jan 2020–present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Founding Director, Center for Embodied Autonomy and Robotics (Fall 2022–present)
+        - Co-Director, MS Robotics (June 2024–present)
+        - Director, Distributed Robotics and Networked Embedded Systems (DRONES) Lab
+    - title: Assistant Professor
+      institution: Department of Computer Science and Engineering, University at Buffalo
+      year: Aug 2013–Dec 2019
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Founded and led the DRONES Lab
+        - Co-Director, Reliable Mobile Systems (with Prof. Steve Ko and Prof. Lukasz Ziarek)
+    - title: Postdoctoral Fellow
+      institution: School of Engineering and Applied Sciences, Harvard University
+      year: Mar 2010–Aug 2013
       description:
+        - RoboBees Project
+    - title: Graduate Researcher
+      institution: University of Southern California
+      year: Jan 2001–Jan 2003
+    - title: Research Intern
+      institution: Earthquake Engineering Research Center, UC Berkeley
+      year: May 2005–Aug 2005
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Selected Teaching
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: CSE 468/568 – Robotics Algorithms
+      institution: University at Buffalo
+      year: Sp 14–16, 18, 23; Fa 16, 18, 21–25
+      description:
+        - Redesigned the course to introduce robotics to seniors and first-year graduate students
+        - Covers kinematics, probabilistic localization and mapping, planning, and navigation
+        - Includes ROS-based programming assignments
+    - title: CSE 610 – Learning for Autonomous Systems
+      institution: University at Buffalo
+      year: Spring 2022
+      description:
+        - Co-taught with Prof. Souma Chowdhury
+    - title: CSE 622 – Advanced Computer Systems
+      institution: University at Buffalo
+      year: Fall 2013, 2014, 2016, 2018
+      description:
+        - Co-taught with Prof. Steve Ko
+    - title: CSE 421/521 – Operating Systems
+      institution: University at Buffalo
+      year: Fall 2017
+    - title: CSE 610 – Intelligent Sensing Systems
+      institution: University at Buffalo
+      year: Spring 2017
+    - title: CSE 749 – Multi-Robot Coordination
+      institution: University at Buffalo
+      year: Fall 2015
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - year: 2022
       items:
-        - Description 1.
-        - Description 2.
+        - IEEE Region 1 Technological Innovation (Academic) Award
+        - Senior Member, IEEE
+        - Best Poster, HotMobile 2022
+    - year: 2021
+      items:
+        - Best Paper, IEEE Symposium on Multi-Robot and Multi-Agent Systems (MRS)
+        - Senior Researcher of the Year, UB CSE
+        - Runner-up, F1TENTH Autonomous Racing Competition at IROS
+    - year: 2019
+      items:
+        - NSF CAREER Award
+        - Honorable Mention, Best Paper Award, EICS 2019
+    - year: 2017
+      items:
+        - Runner-up, Best Poster Award, IPSN
+    - year: 2016
+      items:
+        - Distinguished Research Mentor Award, University at Buffalo Collegiate Science and Technology Entry Program
+    - year: 2012
+      items:
+        - Best Demo, IPSN-SPOTS
+        - Runner-up, Best Paper Award, IPSN-SPOTS
+    - year: 2010
+      items:
+        - International Students Assembly Outstanding Service Award
+        - USC Robotics Lab George M. Bekey Outstanding Service Award
+    - year: 2005
+      items:
+        - NSF Travel Grant, SenSys
+    - year: 2002
+      items:
+        - Conference Travel Grant, SIGCOMM
 
-- title: Other Interests
+- title: Professional Memberships
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - IEEE
+    - ACM
+    - USENIX
+    - AAAS
