@@ -176,12 +176,12 @@ h3 {
 }
 
 .hero-affiliations a {
-  color: inherit;
+  color: var(--ub-blue);
   text-decoration: none;
 }
 
 .hero-affiliations a:hover {
-  color: var(--ub-blue);
+  color: var(--ub-navy);
   text-decoration: underline;
 }
 
