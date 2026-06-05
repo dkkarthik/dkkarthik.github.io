@@ -91,13 +91,13 @@ img {
 
 .hero {
   padding-top: 2.8rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.4rem;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 180px;
-  gap: 1rem;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 1.6rem;
   align-items: start;
 }
 
@@ -121,26 +121,13 @@ h3 {
   font-size: 1.2rem;
 }
 
-.hero-brief {
-  margin: 0.55rem 0 0.55rem;
-  color: var(--ub-gray);
-  font-size: 1rem;
+.hero-bio {
+  margin: 0.75rem 0 0;
+  max-width: 46rem;
+  font-size: 1.02rem;
+  line-height: 1.72;
 }
 
-.lede {
-  font-size: 1rem;
-  max-width: 38rem;
-  margin: 0;
-}
-
-.quick-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 0.8rem;
-}
-
-.quick-links a,
 .links-row a,
 .footer-links a {
   display: inline-flex;
@@ -154,7 +141,6 @@ h3 {
   background: #fff;
 }
 
-.quick-links a:hover,
 .links-row a:hover,
 .footer-links a:hover {
   border-color: rgba(0, 47, 86, 0.3);
@@ -165,13 +151,65 @@ h3 {
   display: grid;
   justify-items: start;
   align-content: start;
+  gap: 0.55rem;
 }
 
 .profile-image {
-  width: 150px;
-  border-radius: 14px;
+  width: 220px;
+  border-radius: 6px;
   object-fit: cover;
-  box-shadow: var(--shadow);
+  box-shadow: none;
+}
+
+.hero-affiliations {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--ub-gray);
+}
+
+.hero-affiliations p {
+  margin: 0 0 0.28rem;
+}
+
+.hero-affiliations a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-affiliations a:hover {
+  color: var(--ub-blue);
+  text-decoration: underline;
+}
+
+.hero-social {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.2rem;
+}
+
+.hero-social a {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 47, 86, 0.12);
+  border-radius: 999px;
+  color: var(--ub-navy);
+  text-decoration: none;
+}
+
+.hero-social a:hover {
+  color: var(--ub-blue);
+  border-color: rgba(0, 91, 187, 0.25);
+  background: rgba(0, 91, 187, 0.04);
+}
+
+.hero-social svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .card {
@@ -356,8 +394,8 @@ h3 {
   }
 
   .profile-image {
-    width: 150px;
-    max-width: 150px;
+    width: 220px;
+    max-width: 220px;
   }
 
   .nav-wrap {
@@ -383,15 +421,23 @@ h3 {
 
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 1.15rem;
   }
 
-  .quick-links,
+  .hero-aside {
+    justify-items: start;
+  }
+
+  .profile-image {
+    width: 190px;
+    max-width: 190px;
+  }
+
   .links-row,
   .footer-links {
     gap: 0.55rem;
   }
 
-  .quick-links a,
   .links-row a,
   .footer-links a {
     width: 100%;
