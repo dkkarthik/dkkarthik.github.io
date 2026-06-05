@@ -155,7 +155,7 @@ h3 {
 }
 
 .profile-image {
-  width: 140px;
+  width: 93px;
   height: auto;
   border-radius: 6px;
   object-fit: contain;
@@ -396,8 +396,8 @@ h3 {
   }
 
   .profile-image {
-    width: 140px;
-    max-width: 140px;
+    width: 93px;
+    max-width: 93px;
     height: auto;
   }
 
@@ -432,8 +432,8 @@ h3 {
   }
 
   .profile-image {
-    width: 140px;
-    max-width: 140px;
+    width: 93px;
+    max-width: 93px;
     height: auto;
   }
 
