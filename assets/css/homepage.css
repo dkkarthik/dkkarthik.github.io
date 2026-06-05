@@ -96,8 +96,8 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 1.6rem;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 1.4rem;
   align-items: start;
 }
 
@@ -110,7 +110,7 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.3rem, 4vw, 4.2rem);
+  font-size: clamp(1.9rem, 3vw, 3rem);
 }
 
 h2 {
@@ -122,10 +122,10 @@ h3 {
 }
 
 .hero-bio {
-  margin: 0.75rem 0 0;
-  max-width: 46rem;
-  font-size: 1.02rem;
-  line-height: 1.72;
+  margin: 0.55rem 0 0;
+  max-width: 44rem;
+  font-size: 0.94rem;
+  line-height: 1.62;
 }
 
 .links-row a,
@@ -155,7 +155,7 @@ h3 {
 }
 
 .profile-image {
-  width: 220px;
+  width: 180px;
   border-radius: 6px;
   object-fit: cover;
   box-shadow: none;
@@ -394,8 +394,8 @@ h3 {
   }
 
   .profile-image {
-    width: 220px;
-    max-width: 220px;
+    width: 180px;
+    max-width: 180px;
   }
 
   .nav-wrap {
@@ -429,8 +429,8 @@ h3 {
   }
 
   .profile-image {
-    width: 190px;
-    max-width: 190px;
+    width: 170px;
+    max-width: 170px;
   }
 
   .links-row,
