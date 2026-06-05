@@ -168,7 +168,7 @@ h3 {
 
 .hero-affiliations {
   width: 100%;
-  font-size: 0.84rem;
+  font-size: 0.76rem;
   line-height: 1.25;
   color: var(--ub-gray);
   text-align: center;
@@ -176,6 +176,10 @@ h3 {
 
 .hero-affiliations p {
   margin: 0 0 0.12rem;
+}
+
+.hero-affiliations p:first-child {
+  white-space: nowrap;
 }
 
 .hero-affiliations a {
