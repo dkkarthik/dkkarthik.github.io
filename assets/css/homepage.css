@@ -103,7 +103,7 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.9fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 2.5rem;
   align-items: start;
 }
@@ -138,8 +138,27 @@ h3 {
 }
 
 .title {
-  margin: 0.85rem 0 1rem;
+  margin: 0.85rem 0 0.5rem;
   font-size: 1.12rem;
+  color: var(--ub-gray);
+}
+
+.title a {
+  color: inherit;
+}
+
+.hero-institution-links {
+  margin: 0 0 1rem;
+  color: var(--ub-gray);
+  font-size: 0.98rem;
+}
+
+.hero-institution-links a {
+  color: var(--ub-blue);
+}
+
+.hero-institution-links span {
+  margin: 0 0.45rem;
   color: var(--ub-gray);
 }
 
@@ -179,10 +198,11 @@ h3 {
 .hero-aside {
   display: grid;
   gap: 1rem;
+  justify-items: start;
 }
 
 .profile-image {
-  width: 100%;
+  width: min(100%, 360px);
   border-radius: 20px;
   object-fit: cover;
   box-shadow: var(--shadow);
@@ -196,6 +216,7 @@ h3 {
 }
 
 .affiliations {
+  width: min(100%, 360px);
   padding: 1.2rem 1.2rem 0.3rem;
 }
 
@@ -367,6 +388,15 @@ h3 {
   .pillars-grid,
   .publication {
     grid-template-columns: 1fr;
+  }
+
+  .hero-aside {
+    justify-items: stretch;
+  }
+
+  .profile-image,
+  .affiliations {
+    width: 100%;
   }
 
   .nav-wrap {
