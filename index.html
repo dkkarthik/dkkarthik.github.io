@@ -123,12 +123,8 @@ permalink: /
 
       <section class="section" id="projects">
         <div class="container">
-          <div class="section-heading">
-            <h2>Featured Projects</h2>
-            <p>
-              Flagship efforts that reflect the lab's broader agenda in robust
-              perception, safe autonomy, and real-world deployment.
-            </p>
+          <div class="section-heading compact projects-heading">
+            <h2>Projects</h2>
           </div>
 
           <div class="projects-grid">
@@ -174,14 +170,18 @@ permalink: /
               <div class="project-body">
                 <h3>GPU-Accelerated Visual SLAM</h3>
                 <p>
-                  A cluster of recent work focuses on systems challenges in
-                  visual SLAM, including GPU acceleration for tracking, bundle
-                  adjustment, and loop-closure related computation.
+                  Recent work with Steven Y. Ko spans GPU acceleration across
+                  tracking, mapping, loop closure, and graph optimization in
+                  visual SLAM.
                 </p>
-                <div class="links-row">
-                  <a href="https://doi.org/10.1109/IROS60139.2025.11247316">FastTrack</a>
-                  <a href="https://doi.org/10.1109/IROS60139.2025.11247316">Paper</a>
-                </div>
+                <ul class="project-bullets">
+                  <li><strong>FastLoop</strong> — Parallel loop closing with GPU acceleration for visual SLAM <a href="https://arxiv.org/abs/2603.17201">[arXiv26]</a></li>
+                  <li><strong>GRAPHITE</strong> — GPU-accelerated mixed-precision graph optimization framework <a href="https://arxiv.org/abs/2509.26581">[ICRA26]</a></li>
+                  <li><strong>TurboMap</strong> — GPU-accelerated local mapping for visual SLAM <a href="https://arxiv.org/abs/2511.02036">[arXiv25]</a></li>
+                  <li><strong>FastTrack</strong> — GPU-accelerated tracking for visual SLAM <a href="https://ieeexplore.ieee.org/document/11247316">[IROS25]</a></li>
+                  <li><strong>JacobiGPU</strong> — GPU-accelerated numerical differentiation for loop closure in visual SLAM <a href="https://ieeexplore.ieee.org/document/10611512">[ICRA24]</a></li>
+                  <li><strong>Local Bundle Adjustment</strong> — Efficient GPU use for visual-inertial SLAM bundle adjustment <a href="https://ieeexplore.ieee.org/document/10160499">[ICRA23]</a></li>
+                </ul>
               </div>
             </article>
           </div>

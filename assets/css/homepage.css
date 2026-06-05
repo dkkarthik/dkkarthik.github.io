@@ -239,6 +239,10 @@ h3 {
   padding-top: 0;
 }
 
+#projects.section {
+  padding-top: 1.1rem;
+}
+
 .section-heading p {
   margin: 0.45rem 0 0;
   font-size: 0.84rem;
@@ -246,6 +250,10 @@ h3 {
 
 .section-heading.compact {
   margin-bottom: 0.55rem;
+}
+
+.projects-heading {
+  margin-bottom: 0.4rem;
 }
 
 .pillars-grid,
@@ -263,10 +271,12 @@ h3 {
 }
 
 .projects-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .project {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
   overflow: hidden;
 }
 
@@ -300,6 +310,19 @@ h3 {
 .publication-body {
   padding: 0.9rem;
   font-size: 0.84rem;
+}
+
+.project-bullets {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.project-bullets li + li {
+  margin-top: 0.28rem;
+}
+
+.project-bullets a {
+  white-space: nowrap;
 }
 
 .links-row {
@@ -408,7 +431,8 @@ h3 {
   .two-up,
   .footer-grid,
   .pillars-grid,
-  .publication {
+  .publication,
+  .project {
     grid-template-columns: 1fr;
   }
 
