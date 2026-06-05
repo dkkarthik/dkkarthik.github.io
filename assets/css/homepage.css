@@ -347,7 +347,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 26px;
+  height: 31px;
   padding: 0;
   text-decoration: none;
   flex: 0 1 auto;
@@ -355,22 +355,22 @@ h3 {
 
 .funding-logo-image {
   display: block;
-  height: 20px;
+  height: 24px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
 }
 
 .funding-logo-image--moog {
-  height: 16px;
+  height: 19px;
 }
 
 .funding-logo-image--canal {
-  height: 18px;
+  height: 22px;
 }
 
 .funding-logo-image--suny {
-  height: 18px;
+  height: 22px;
 }
 
 .funding-logo:hover {
