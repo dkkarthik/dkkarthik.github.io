@@ -149,21 +149,22 @@ h3 {
 
 .hero-aside {
   display: grid;
-  justify-items: start;
+  justify-items: center;
   align-content: start;
-  gap: 0.55rem;
+  gap: 0.5rem;
 }
 
 .profile-image {
-  width: 180px;
+  width: 155px;
   border-radius: 6px;
   object-fit: cover;
   box-shadow: none;
 }
 
 .hero-affiliations {
-  font-size: 0.76rem;
-  line-height: 1.4;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 1.35;
   color: var(--ub-gray);
 }
 
@@ -394,8 +395,8 @@ h3 {
   }
 
   .profile-image {
-    width: 180px;
-    max-width: 180px;
+    width: 155px;
+    max-width: 155px;
   }
 
   .nav-wrap {
@@ -425,12 +426,12 @@ h3 {
   }
 
   .hero-aside {
-    justify-items: start;
+    justify-items: center;
   }
 
   .profile-image {
-    width: 170px;
-    max-width: 170px;
+    width: 150px;
+    max-width: 150px;
   }
 
   .links-row,
