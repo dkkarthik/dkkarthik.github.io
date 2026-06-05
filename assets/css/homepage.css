@@ -50,7 +50,7 @@ img {
 
 .section {
   padding: 1.9rem 0;
-  border-top: 1px solid rgba(0, 47, 86, 0.12);
+  border-top: 0;
 }
 
 .section-alt {
@@ -117,7 +117,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  font-size: clamp(1.16rem, 1.76vw, 1.6rem);
 }
 
 h3 {
