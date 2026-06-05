@@ -155,9 +155,10 @@ h3 {
 }
 
 .profile-image {
-  width: 155px;
+  width: 140px;
+  height: auto;
   border-radius: 6px;
-  object-fit: cover;
+  object-fit: contain;
   box-shadow: none;
 }
 
@@ -395,8 +396,9 @@ h3 {
   }
 
   .profile-image {
-    width: 155px;
-    max-width: 155px;
+    width: 140px;
+    max-width: 140px;
+    height: auto;
   }
 
   .nav-wrap {
@@ -430,8 +432,9 @@ h3 {
   }
 
   .profile-image {
-    width: 150px;
-    max-width: 150px;
+    width: 140px;
+    max-width: 140px;
+    height: auto;
   }
 
   .links-row,
