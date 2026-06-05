@@ -333,37 +333,44 @@ h3 {
 
 .funding-strip {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  padding: 0.7rem 0.8rem 0.85rem;
+  flex-wrap: nowrap;
+  gap: 0.45rem;
+  padding: 0.35rem 0.45rem 0.45rem;
   justify-content: center;
   align-items: center;
-  background: var(--ub-navy);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #edf3fa;
+  border-top: 1px solid rgba(0, 47, 86, 0.08);
+  overflow: hidden;
 }
 
 .funding-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 42px;
-  padding: 0.15rem 0.35rem;
+  height: 26px;
+  padding: 0;
   text-decoration: none;
+  flex: 0 1 auto;
 }
 
 .funding-logo-image {
   display: block;
-  height: 30px;
+  height: 20px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
 }
 
-.funding-logo-image--wide {
-  max-width: 116px;
+.funding-logo-image--moog {
+  height: 16px;
 }
 
-.funding-logo-image--seal {
-  height: 32px;
+.funding-logo-image--canal {
+  height: 18px;
+}
+
+.funding-logo-image--suny {
+  height: 18px;
 }
 
 .funding-logo:hover {
