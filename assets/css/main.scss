@@ -166,18 +166,27 @@ footer {
   line-height: 1.7;
 }
 
-// Keep the biography and profile in two top-aligned columns on desktop.
+// Align the profile with the name while keeping the biography below the heading.
 @media (min-width: 576px) {
-  .post > article:has(> .profile) {
+  .post:has(> article > .profile) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 30%;
-    gap: 2rem 2.5rem;
+    column-gap: 2.5rem;
     align-items: start;
+  }
+
+  .post:has(> article > .profile) > .post-header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .post > article:has(> .profile) {
+    display: contents;
   }
 
   .post > article > .profile {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / span 2;
     float: none;
     width: 100%;
     margin: 0;
@@ -185,11 +194,13 @@ footer {
 
   .post > article:has(> .profile) > .clearfix {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
   }
 
   .post > article:has(> .profile) > .social {
     grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 2rem;
   }
 }
 
