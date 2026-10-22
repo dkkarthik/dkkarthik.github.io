@@ -58,3 +58,5 @@ The upstream bootstrap validation was adapted to this site's root URL. Runtime g
 - Customization: edit the site-owned branding section at the bottom of `assets/css/main.scss`. When updating the theme, review upstream changes with `bundle exec al-folio upgrade overrides diff assets/css/main.scss`.
 
 Publication media coverage is maintained in `_data/publicity.yml`, keyed by the BibTeX entry ID. Entries without coverage do not show a Publicity label. Award links are maintained in `_data/publication_awards.yml`; awards appear on a separate line below publicity, with a fallback to the BibTeX `award` field when no structured links are provided.
+
+News entries use a bold month and two-digit year prefix, such as `**[Sep 26]**` for September 2026. Do not include the day of the month.
