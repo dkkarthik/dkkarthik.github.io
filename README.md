@@ -62,3 +62,5 @@ Publication media coverage is maintained in `_data/publicity.yml`, keyed by the 
 News entries use a bold month and two-digit year prefix, such as `**[Sep 26]**` for September 2026. Do not include the day of the month.
 
 Publishing preference: after completing and checking a substantial website change, including any news addition or edit, commit and push it to `origin/master` automatically. This triggers the website deployment; report the push and deployment status.
+
+Use `Project Homepage` for project-page links and `Paper` for links to the corresponding Publications entry in news announcements. Avoid duplicate paper links.
