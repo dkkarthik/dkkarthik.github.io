@@ -60,3 +60,5 @@ The upstream bootstrap validation was adapted to this site's root URL. Runtime g
 Publication media coverage is maintained in `_data/publicity.yml`, keyed by the BibTeX entry ID. Entries without coverage do not show a Publicity label. Award links are maintained in `_data/publication_awards.yml`; awards appear on a separate line below publicity, with a fallback to the BibTeX `award` field when no structured links are provided.
 
 News entries use a bold month and two-digit year prefix, such as `**[Sep 26]**` for September 2026. Do not include the day of the month.
+
+Publishing preference: after completing and checking a substantial website change, including any news addition or edit, commit and push it to `origin/master` automatically. This triggers the website deployment; report the push and deployment status.
