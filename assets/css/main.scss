@@ -156,9 +156,10 @@ input:focus-visible {
   outline-offset: 4px;
 }
 
-footer {
+footer,
+footer.sticky-bottom {
   background: #fff;
-  border-top: 1px solid #e4e4e4;
+  border-top: 0;
 }
 
 .post > article:has(> .profile) > .clearfix {
@@ -195,12 +196,6 @@ footer {
   .post > article:has(> .profile) > .clearfix {
     grid-column: 1;
     grid-row: 2;
-  }
-
-  .post > article:has(> .profile) > .social {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    margin-top: 2rem;
   }
 }
 
@@ -267,4 +262,25 @@ footer {
   article > .publications:first-child {
     margin-top: 0;
   }
+}
+
+.profile .social {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.profile .social .contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  line-height: 1;
+}
+
+.profile .social .contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

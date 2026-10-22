@@ -71,11 +71,11 @@ for (const forbiddenPath of ["_includes", "_sass", "_scripts", "assets/tailwind"
   }
 }
 
-// This personal site intentionally overrides the publication layout for publicity links.
+// This personal site intentionally overrides publication links and the homepage profile layout.
 // The upstream checksum is tracked by al-folio's override audit.
 if (exists("_layouts")) {
   for (const entry of fs.readdirSync(path.join(root, "_layouts"))) {
-    if (entry !== "bib.liquid") failures.push(`Unreviewed site layout: _layouts/${entry}`);
+    if (!["bib.liquid", "about.liquid"].includes(entry)) failures.push(`Unreviewed site layout: _layouts/${entry}`);
   }
 }
 
