@@ -407,3 +407,14 @@ footer.sticky-bottom {
     width: 100px;
   }
 }
+
+// Linked anchors (e.g. /publications/#key) land below the fixed navbar,
+// and a linked publication is lightly highlighted.
+[id] {
+  scroll-margin-top: 80px;
+}
+
+.publications ol.bibliography li .row:has(> :target) {
+  background: #eef4fb;
+  border-radius: 4px;
+}
