@@ -1,6 +1,7 @@
 # Current advisees shown on the homepage, in display order.
 # Source: https://droneslab.github.io/team/ ("Current members").
 # role: short label shown after the name. url is optional.
+# coadvisor (with optional coadvisor_url) adds "(co-advised by ...)".
 - name: Charuvahan Adhivarahan
   role: Postdoc
   url: https://charuvahan.com/
@@ -31,6 +32,11 @@
   url: https://www.linkedin.com/in/ji-hyeon-yoo-70274737b
 - name: Rose Vuluvabeeti
   role: PhD
+- name: Long Duong
+  role: PhD
+  url: https://dnl2k.github.io/
+  coadvisor: Roshan
+  coadvisor_url: https://www.acsu.buffalo.edu/~roshana/
 - name: Umesh Ghaskata
   role: MS
   url: https://www.linkedin.com/in/umesh-ghaskata-727884200

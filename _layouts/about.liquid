@@ -63,6 +63,17 @@ layout: default
               {% if person.role -%}
                 <span class="home-panel-meta">{{ person.role }}</span>
               {%- endif %}
+              {% if person.coadvisor -%}
+                <span class="home-panel-meta home-panel-coadvisor">
+                  (co-advised by
+                  {% if person.coadvisor_url -%}
+                    <a href="{{ person.coadvisor_url }}">{{ person.coadvisor }}</a>
+                  {%- else -%}
+                    {{- person.coadvisor -}}
+                  {%- endif -%}
+                  )
+                </span>
+              {%- endif %}
             </li>
           {% endfor %}
         </ul>
