@@ -357,9 +357,53 @@ footer.sticky-bottom {
 // Justified text for the biography and news items, hyphenating long words
 // so narrow columns do not open wide gaps between words.
 .post > article:has(> .profile) > .clearfix,
-#home-news ~ ul li,
+#home-news ~ ul .news-text,
 .news-list p {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
+}
+
+// News items with a photo: thumbnail on the left, click to zoom (medium-zoom).
+.news-item.has-media,
+#home-news ~ ul li.has-media {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+#home-news ~ ul .news-text {
+  display: block;
+  flex: 1;
+  min-width: 0;
+}
+
+.news-item.has-media {
+  margin-bottom: 1rem;
+}
+
+.news-item.has-media .news-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-thumb {
+  flex: 0 0 auto;
+  width: 160px;
+  height: auto;
+  margin-top: 0.3rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: zoom-in;
+}
+
+#home-news ~ ul .news-thumb {
+  width: 90px;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 575.98px) {
+  .news-thumb {
+    width: 100px;
+  }
 }

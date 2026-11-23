@@ -84,12 +84,27 @@ layout: default
         {% assign home_news = site.news | sort: 'order' %}
         <ul>
           {% for item in home_news limit: 5 %}
-            <li>
-              {% if item.short -%}
-                {{- item.short | markdownify | remove: '<p>' | remove: '</p>' -}}
-              {%- else -%}
-                {{- item.content | strip_html | truncatewords: 25 -}}
+            <li
+              {% if item.image %}
+                class="has-media"
+              {% endif %}
+            >
+              {% if item.image -%}
+                <img
+                  class="news-thumb"
+                  src="{{ item.image | relative_url }}"
+                  alt="{{ item.image_alt | escape }}"
+                  loading="lazy"
+                  data-zoomable
+                >
               {%- endif %}
+              <span class="news-text">
+                {%- if item.short -%}
+                  {{- item.short | markdownify | remove: '<p>' | remove: '</p>' -}}
+                {%- else -%}
+                  {{- item.content | strip_html | truncatewords: 25 -}}
+                {%- endif -%}
+              </span>
             </li>
           {% endfor %}
         </ul>
