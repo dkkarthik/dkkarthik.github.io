@@ -436,3 +436,22 @@ footer.sticky-bottom {
   background: #eef4fb;
   border-radius: 4px;
 }
+
+// "Joining my lab" page: section headings match the Publications page.
+.joining h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.6rem;
+  margin: 2rem 0 1.25rem;
+  border-bottom: 2px solid #005bbb;
+}
+
+.joining:first-child h2 {
+  margin-top: 0;
+}
+
+.joining p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}

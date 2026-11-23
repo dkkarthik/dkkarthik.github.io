@@ -1,6 +1,6 @@
 # Karthik Dantu's website
 
-Personal academic website built with the al-folio v1 starter and the pinned `al_folio_core` theme gem. Navigation contains About, Projects, Publications, and News.
+Personal academic website built with the al-folio v1 starter and the pinned `al_folio_core` theme gem. Navigation contains About, Projects, Publications, News, and Joining my lab (`_pages/joining.md`).
 
 ## Content
 
