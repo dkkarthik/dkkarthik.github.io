@@ -20,7 +20,9 @@ A note on cold emails: I receive about ten emails every day along the lines of _
 
 ## Prospective Masters students {#prospective-ms}
 
-Details coming soon.
+If you are a prospective Masters student applying to UB, please apply through the university's application portals. I particularly encourage you to consider the [MS in Robotics](https://www.buffalo.edu/grad/programs/engineering-science-robotics-ms.html) program, which I co-direct. We do not have assistantships for incoming MS students.
+
+Each semester, I host between 5 and 10 MS students for voluntary research across several projects. Based on their interest and performance, some of them go on to do a Masters thesis with me on their research topic. Several students have also co-authored peer-reviewed papers in top robotics conferences and journals based on their work in my lab. The best way to get into my lab is to take my class, [CSE 568](https://droneslab.github.io/RoboticsAlgorithms/), and do well in it. I also consider students who have taken Computer Vision, Machine Learning, or robotics-related courses in MAE or ISE; if you have a related background, that is something we can discuss once you are at UB. Each semester, please look for emails from me advertising lab projects that are looking for help. Please do not email me before you come to UB — I cannot respond beyond what I have said here.
 
 </section>
 
