@@ -284,3 +284,72 @@ footer.sticky-bottom {
   align-items: center;
   justify-content: center;
 }
+
+// Homepage row below the bio: students | latest news | travel.
+// Side columns match the 30% profile column above.
+.home-panels {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.home-panel h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #005bbb;
+}
+
+.home-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-panel li {
+  margin-bottom: 0.55rem;
+}
+
+.home-panel-meta,
+.home-panel-date {
+  color: #666;
+}
+
+.home-panel li .home-panel-meta {
+  margin-left: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.home-panel-date {
+  display: inline-block;
+  min-width: 3.5rem;
+  font-weight: 600;
+}
+
+.home-panel + .home-panel {
+  margin-top: 1.75rem;
+}
+
+.home-panel-more {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .home-panels {
+    display: grid;
+    grid-template-columns: 30% minmax(0, 1fr) 30%;
+    column-gap: 2.5rem;
+    align-items: start;
+  }
+
+  .home-panel + .home-panel {
+    margin-top: 0;
+  }
+
+  .post > article:has(> .profile) > .home-panels {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+}

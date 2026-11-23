@@ -1,6 +1,7 @@
 ---
 year: 2026
 order: 0
+short: "**[Aug 26]** Our recycled-plastics sensing technology received a 2026 R&D 100 Award."
 ---
 
 **[Aug 26]** Our recycled-plastics sensing technology co-led by [Charuvahan Adhivarahan](https://charuvahan.com/) received a **2026 R&D 100 Award** and **R&D 100 Special Recognition in Corporate Social Responsibility (Bronze)**. Developed with our UB collaborators, the technology combines sensing techniques and machine learning to measure recycled plastic content in commercial products.<br>

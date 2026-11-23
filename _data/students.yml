@@ -1,0 +1,36 @@
+# Current advisees shown on the homepage, in display order.
+# Source: https://droneslab.github.io/team/ ("Current members").
+# role: short label shown after the name. url is optional.
+- name: Charuvahan Adhivarahan
+  role: Postdoc
+  url: https://charuvahan.com/
+- name: Vaishali Maheshkar
+  role: PhD
+  url: https://droneslab.github.io/people/vaishali/
+- name: Yash Turkar
+  role: PhD
+  url: https://yash.turkar.in/
+- name: Kartikeya Singh
+  role: PhD
+  url: https://kartikeya13.github.io/
+- name: Pranay Meshram
+  role: PhD
+  url: https://pranayspeed.github.io/
+- name: Yashom Dighe
+  role: PhD
+  url: https://yashomdighe.com/
+- name: Christo Aluckal
+  role: PhD
+  url: https://christoaluckal.com/
+- name: Shekoufeh Sadeghi
+  role: PhD
+- name: Pavan Pothuri
+  role: PhD
+- name: Ji-Hyeon Yoo
+  role: PhD
+  url: https://www.linkedin.com/in/ji-hyeon-yoo-70274737b
+- name: Rose Vuluvabeeti
+  role: PhD
+- name: Umesh Ghaskata
+  role: MS
+  url: https://www.linkedin.com/in/umesh-ghaskata-727884200

@@ -9,7 +9,7 @@ Personal academic website built with the al-folio v1 starter and the pinned `al_
 - `_projects/*.md`: the five project pages, images, paper links, and funding acknowledgments.
 - `_pages/projects.md`: project overview using al-folio's project cards.
 - `_bibliography/papers.bib`: 71 publication records: all 65 records from `../lab-website/redesign`, merged with the existing references. Twenty-two short references were enriched with complete lab citations; six additional references were retained. See `docs/publications-import.md` for provenance and matching decisions.
-- `_news/*.md`: five announcements. The original site supplied years only, so the News page groups by year without fabricated month/day dates.
+- `_news/*.md`: six announcements. The original site supplied years only, so the News page groups by year without fabricated month/day dates.
 - `assets/img/`: profile, funding, and project media.
 
 ## Local development
@@ -58,6 +58,8 @@ The upstream bootstrap validation was adapted to this site's root URL. Runtime g
 - Customization: edit the site-owned branding section at the bottom of `assets/css/main.scss`. When updating the theme, review upstream changes with `bundle exec al-folio upgrade overrides diff assets/css/main.scss`.
 
 Publication media coverage is maintained in `_data/publicity.yml`, keyed by the BibTeX entry ID. Entries without coverage do not show a Publicity label. Award links are maintained in `_data/publication_awards.yml`; awards appear on a separate line below publicity, with a fallback to the BibTeX `award` field when no structured links are provided.
+
+The homepage row below the biography lists students and postdocs from `_data/students.yml`, the five latest news items (each item's `short` front-matter headline, ordered by `order`), and travel from `_data/travel.yml`. Add a `short` headline to every new news item.
 
 News entries use a bold month and two-digit year prefix, such as `**[Sep 26]**` for September 2026. Do not include the day of the month.
 

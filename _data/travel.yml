@@ -1,0 +1,7 @@
+# Travel and talks shown on the homepage, newest first.
+# date: short label such as "Dec 08"; place: venue/city; url is optional.
+# Example:
+# - date: Dec 08
+#   place: Example Workshop, City
+#   url: https://example.org/
+[]

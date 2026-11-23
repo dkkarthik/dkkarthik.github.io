@@ -1,6 +1,7 @@
 ---
 year: 2026
 order: 1
+short: "**[Aug 26]** CLEAR accepted to IEEE RA‑L. Congratulations to [Pranay Meshram](https://pranayspeed.github.io/)!"
 ---
 
 **[Aug 26]** Our work CLEAR has been accepted to IEEE Robotics and Automation Letters (RA-L). This work is part of the larger ONR project [GRAPPLE](https://onr-grapple.github.io/) on courses-of-action planning for multi-agent systems. Congratulations to [Pranay Meshram](https://pranayspeed.github.io/) and the team!<br>

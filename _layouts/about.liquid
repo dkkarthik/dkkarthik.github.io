@@ -48,6 +48,64 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Site-owned homepage panels: students, latest news, travel -->
+    <div class="home-panels">
+      <section class="home-panel" aria-labelledby="home-students">
+        <h2 id="home-students">Students &amp; Postdocs</h2>
+        <ul>
+          {% for person in site.data.students %}
+            <li>
+              {% if person.url -%}
+                <a href="{{ person.url }}">{{ person.name }}</a>
+              {%- else -%}
+                {{- person.name -}}
+              {%- endif %}
+              {% if person.role -%}
+                <span class="home-panel-meta">{{ person.role }}</span>
+              {%- endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="home-panel" aria-labelledby="home-news">
+        <h2 id="home-news">Latest News</h2>
+        {% assign home_news = site.news | sort: 'order' %}
+        <ul>
+          {% for item in home_news limit: 5 %}
+            <li>
+              {% if item.short -%}
+                {{- item.short | markdownify | remove: '<p>' | remove: '</p>' -}}
+              {%- else -%}
+                {{- item.content | strip_html | truncatewords: 25 -}}
+              {%- endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        <p class="home-panel-more"><a href="{{ '/news/' | relative_url }}">All news &rarr;</a></p>
+      </section>
+
+      <section class="home-panel" aria-labelledby="home-travel">
+        <h2 id="home-travel">Travel</h2>
+        {% if site.data.travel and site.data.travel.size > 0 %}
+          <ul>
+            {% for trip in site.data.travel %}
+              <li>
+                <span class="home-panel-date">{{ trip.date }}</span>
+                {% if trip.url -%}
+                  <a href="{{ trip.url }}">{{ trip.place }}</a>
+                {%- else -%}
+                  {{- trip.place -}}
+                {%- endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="home-panel-meta">No upcoming travel listed.</p>
+        {% endif %}
+      </section>
+    </div>
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
