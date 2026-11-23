@@ -6,6 +6,8 @@ nav: true
 nav_order: 3
 ---
 
+<div class="news-list" markdown="1">
+
 {% assign announcements = site.news | sort: "order" %}
 {% assign years = announcements | group_by: "year" %}
 {% for year in years %}
@@ -14,3 +16,5 @@ nav_order: 3
 {{ item.content }}
 {% endfor %}
 {% endfor %}
+
+</div>

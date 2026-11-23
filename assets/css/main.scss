@@ -353,3 +353,13 @@ footer.sticky-bottom {
     grid-row: 3;
   }
 }
+
+// Justified text for the biography and news items, hyphenating long words
+// so narrow columns do not open wide gaps between words.
+.post > article:has(> .profile) > .clearfix,
+#home-news ~ ul li,
+.news-list p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
