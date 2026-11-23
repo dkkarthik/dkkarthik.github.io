@@ -90,13 +90,18 @@ layout: default
               {% endif %}
             >
               {% if item.image -%}
-                <img
-                  class="news-thumb"
-                  src="{{ item.image | relative_url }}"
-                  alt="{{ item.image_alt | escape }}"
-                  loading="lazy"
-                  data-zoomable
+                <span
+                  class="news-thumb-wrap"
+                  style="--focus: {{ item.image_focus | default: '50%' }}; --ratio: {{ item.image_ratio | default: 1.78 }}"
                 >
+                  <img
+                    class="news-thumb"
+                    src="{{ item.image | relative_url }}"
+                    alt="{{ item.image_alt | escape }}"
+                    loading="lazy"
+                    data-zoomable
+                  >
+                </span>
               {%- endif %}
               <span class="news-text">
                 {%- if item.short -%}

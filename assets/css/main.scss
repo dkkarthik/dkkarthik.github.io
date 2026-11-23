@@ -38,7 +38,7 @@
 // Sofia Pro uses a locally installed font; Arial is UB's approved substitute.
 :root {
   color-scheme: light;
-  --global-bg-color: #fff;
+  --global-bg-color: #ffffff;
   --global-text-color: #262626;
   --global-text-color-light: #666;
   --global-theme-color: #005bbb;
@@ -369,7 +369,7 @@ footer.sticky-bottom {
 #home-news ~ ul li.has-media {
   display: flex;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 #home-news ~ ul .news-text {
@@ -387,24 +387,42 @@ footer.sticky-bottom {
   min-width: 0;
 }
 
-.news-thumb {
-  flex: 0 0 auto;
-  width: 160px;
-  height: auto;
-  margin-top: 0.3rem;
+// The thumbnail is a window as tall as the item's text (min two lines)
+// that the photo covers, cropping the overflow. Front matter per item:
+// `image_ratio` (photo width / height, default 1.78) and `image_focus`
+// (which part shows vertically: 0% top, 50% default, 100% bottom).
+// Clicking zooms the full, uncropped photo because the <img> keeps its
+// own aspect ratio.
+.news-thumb-wrap {
+  position: relative;
+  display: block;
+  flex: 0 0 160px;
+  min-height: 3.4em;
+  margin: 0.25rem 0;
+  overflow: hidden;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  container-type: size;
+}
+
+.news-thumb-wrap > .news-thumb {
+  position: absolute;
+  left: 50%;
+  top: var(--focus);
+  width: max(100cqw, 100cqh * var(--ratio));
+  max-width: none;
+  height: auto;
+  transform: translate(-50%, calc(-1 * var(--focus)));
   cursor: zoom-in;
 }
 
-#home-news ~ ul .news-thumb {
-  width: 90px;
-  margin-top: 0.2rem;
+#home-news ~ ul .news-thumb-wrap {
+  flex-basis: 90px;
 }
 
 @media (max-width: 575.98px) {
-  .news-thumb {
-    width: 100px;
+  .news-thumb-wrap {
+    flex-basis: 100px;
   }
 }
 

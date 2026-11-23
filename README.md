@@ -59,7 +59,7 @@ The upstream bootstrap validation was adapted to this site's root URL. Runtime g
 
 Publication media coverage is maintained in `_data/publicity.yml`, keyed by the BibTeX entry ID. Entries without coverage do not show a Publicity label. Award links are maintained in `_data/publication_awards.yml`; awards appear on a separate line below publicity, with a fallback to the BibTeX `award` field when no structured links are provided.
 
-The homepage row below the biography lists students and postdocs from `_data/students.yml`, the five latest news items (each item's `short` front-matter headline, ordered by `order`), and travel from `_data/travel.yml`. Add a `short` headline to every new news item.
+The homepage row below the biography lists students and postdocs from `_data/students.yml`, the five latest news items (each item's `short` front-matter headline, ordered by `order`), and travel from `_data/travel.yml`. Add a `short` headline to every new news item. A news item can show a zoomable photo thumbnail with `image`, `image_alt`, `image_ratio` (photo width ÷ height), and optional `image_focus` (vertical crop position, default `50%`); the thumbnail's height follows the item's text. Store news photos, resized and with metadata stripped, in `assets/img/news/`.
 
 News entries use a bold month and two-digit year prefix, such as `**[Sep 26]**` for September 2026. Do not include the day of the month.
 
