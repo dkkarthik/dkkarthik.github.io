@@ -327,6 +327,13 @@ footer.sticky-bottom {
   font-weight: 600;
 }
 
+// Travel rows: date column, then what/where (wraps under itself).
+.home-panel li.travel-item {
+  display: grid;
+  grid-template-columns: 6.6rem minmax(0, 1fr);
+  column-gap: 0.4rem;
+}
+
 .home-panel + .home-panel {
   margin-top: 1.75rem;
 }

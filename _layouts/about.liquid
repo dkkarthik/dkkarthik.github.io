@@ -121,13 +121,11 @@ layout: default
         {% if site.data.travel and site.data.travel.size > 0 %}
           <ul>
             {% for trip in site.data.travel %}
-              <li>
+              <li class="travel-item">
                 <span class="home-panel-date">{{ trip.date }}</span>
-                {% if trip.url -%}
-                  <a href="{{ trip.url }}">{{ trip.place }}</a>
-                {%- else -%}
-                  {{- trip.place -}}
-                {%- endif %}
+                <span class="travel-place">
+                  {{- trip.place | markdownify | remove: '<p>' | remove: '</p>' | strip -}}
+                </span>
               </li>
             {% endfor %}
           </ul>

@@ -1,7 +1,9 @@
-# Travel and talks shown on the homepage, newest first.
-# date: short label such as "Dec 08"; place: venue/city; url is optional.
-# Example:
-# - date: Dec 08
-#   place: Example Workshop, City
-#   url: https://example.org/
-[]
+# Travel and schedule shown on the homepage, newest first.
+# date: short label such as "Dec 08" or "Nov 9–13".
+# place: what/where, in Markdown, so links can go on specific words.
+- date: Nov 25–27
+  place: Thanksgiving
+- date: Nov 9–13
+  place: "[CoRL 2026](https://2026.corl.org/), Austin, TX"
+- date: Sep 27–Oct 1
+  place: "[IROS 2026](https://2026.ieee-iros.org/), Pittsburgh, PA"
