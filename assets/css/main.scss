@@ -426,8 +426,10 @@ footer.sticky-bottom {
 // Chart thumbnails (e.g. Joining my lab): the whole chart is scaled to fit
 // the text-height box instead of cropped; zoom shows it full size.
 .news-thumb-wrap.fit {
-  flex-basis: 240px;
+  flex-basis: 280px;
   background: #fff;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .news-thumb-wrap.fit > .news-thumb {
