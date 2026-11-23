@@ -18,7 +18,8 @@ I am always looking for students with a strong aptitude for research and a solid
 
 A note on cold emails: I receive several emails a day along the lines of _“I read your paper X and was really inspired. I did Y (an unrelated activity) and think I fit your research.”_ I do not respond to such emails. If you have not spent a few hours reading my relevant [papers]({{ "/publications/" | relative_url }}) and cannot show why you are a good fit for [ongoing work in my lab]({{ "/projects/" | relative_url }}), I will not spend the ten minutes it takes to respond. Please save yourself some time: narrow down the faculty you genuinely want to work with, write to them yourself, and do not send generic, AI-written messages that no one will read.
 
-As a reference, I consider the publication venues listed on [roboranking.org](https://roboranking.org/) as relevant venues for robotics. To that list, I would add [Autonomous Robots](https://link.springer.com/journal/10514), [ICLR](https://iclr.cc/), and the [IFRR conferences](http://ifrr.org/) as relevant robotics venues as well.
+As a reference, I consider the publication venues listed on [roboranking.org](https://roboranking.org/) as relevant venues for robotics. To that list, I would add [Autonomous Robots](https://link.springer.com/journal/10514), [ICLR](https://iclr.cc/), and the [IFRR conferences](http://ifrr.org/) as relevant robotics venues as well.<br>
+Papers that are in submission or published at venues that I don't recognize are the same as not having published previously.
 
 </div>
 </div>
