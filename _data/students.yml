@@ -1,4 +1,5 @@
-# Current advisees shown on the homepage, in display order.
+# Current advisees shown on the homepage, in display order:
+# most senior first (postdoc, nth yr, 3rd, 2nd, 1st yr PhD).
 # Source: https://droneslab.github.io/team/ ("Current members").
 # role: short label shown after the name. url is optional.
 # coadvisor (with optional coadvisor_url) adds "(co-advised by ...)".
@@ -20,20 +21,20 @@
 - name: Yashom Dighe
   role: 3rd yr PhD
   url: https://yashomdighe.com/
+- name: Shekoufeh Sadeghi
+  role: 3rd yr PhD
 - name: Christo Aluckal
   role: 2nd yr PhD
   url: https://christoaluckal.com/
-- name: Shekoufeh Sadeghi
-  role: 3rd yr PhD
-- name: Pavan Pothuri
-  role: 1st yr PhD
 - name: Ji-Hyeon Yoo
   role: 2nd yr PhD
   url: https://www.linkedin.com/in/ji-hyeon-yoo-70274737b
-- name: Rose Vuluvabeeti
-  role: 1st yr PhD
 - name: Long Duong
   role: 2nd yr PhD
   url: https://dnl2k.github.io/
   coadvisor: Roshan
   coadvisor_url: https://www.acsu.buffalo.edu/~roshana/
+- name: Pavan Pothuri
+  role: 1st yr PhD
+- name: Rose Vuluvabeeti
+  role: 1st yr PhD
