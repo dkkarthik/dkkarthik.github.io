@@ -286,7 +286,7 @@ footer.sticky-bottom {
 }
 
 // Homepage row below the bio: students | latest news | travel.
-// Side columns match the 30% profile column above.
+// Students 27% and travel 24% (90% and 80% of the 30% profile column).
 .home-panels {
   margin-top: 2.5rem;
   font-size: 0.95rem;
@@ -339,7 +339,7 @@ footer.sticky-bottom {
 @media (min-width: 576px) {
   .home-panels {
     display: grid;
-    grid-template-columns: 30% minmax(0, 1fr) 30%;
+    grid-template-columns: 27% minmax(0, 1fr) 24%;
     column-gap: 2.5rem;
     align-items: start;
   }
